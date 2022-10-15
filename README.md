@@ -1,3 +1,19 @@
+# 使用说明
+
+ArchLinux 需要先安装 linux头文件
+
+```
+sudo pacman -S linux-headers
+```
+
+1. 打开“终端”
+2. 切换到 “driver” 目录
+3. 使用 “make” 编译驱动，成功会看到模块 “ch343.ko”
+4. 输入 “sudo make load” 或 “sudo insmod ch343.ko” 动态加载驱动
+5. 输入 “sudo make unload” 或 “sudo rmmod ch343.ko” 卸载驱动
+6. 输入 “sudo make install” 使驱动程序永久工作
+7. 输入 “sudo make uninstall” 删除驱动
+
 # ch343 linux serial driver
 
 ## Description
